@@ -4,7 +4,7 @@ console.log('hello from docker');
 
 var mysql = require('mysql');
 var connectionSettings = {
-  host: "db",
+  host: process.env.DATABASE_HOST || "db",
   database: "users",
   user: "webapp",
   password: "123",
