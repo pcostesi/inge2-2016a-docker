@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --name lil-bobby-tables \
+docker run -d --name lil-bobby-tables \
     -e MYSQL_PASSWORD=123 \
     -e MYSQL_ROOT_PASSWORD=123 \
     -e MYSQL_DATABASE=users \
